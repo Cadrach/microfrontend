@@ -1,0 +1,15 @@
+{
+  "name": "qiankun-microfrontend",
+  "version": "1.0.0",
+  "description": "Qiankun microfrontend with 2 React sub-applications",
+  "scripts": {
+    "start": "concurrently \"npm run start:main\" \"npm run start:app1\" \"npm run start:app2\"",
+    "start:main": "cd qiankun && npm run dev",
+    "start:app1": "cd react-app-1 && npm run dev", 
+    "start:app2": "cd react-app-2 && npm run dev",
+    "install:all": "npm install && cd qiankun && npm install && cd ../react-app-1 && npm install && cd ../react-app-2 && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
