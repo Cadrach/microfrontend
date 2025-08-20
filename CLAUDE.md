@@ -1,0 +1,3 @@
+- use yarn when possible, not npm
+- use vite
+- you can run yarn dev to test but do not run it in background, I will do it in a separate cmd line

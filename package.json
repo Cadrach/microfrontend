@@ -1,0 +1,17 @@
+{
+  "name": "microfrontend-single-spa",
+  "version": "1.0.0",
+  "description": "Single-SPA microfrontend setup with 3 projects",
+  "scripts": {
+    "dev": "concurrently \"yarn dev:root\" \"yarn dev:app1\" \"yarn dev:app2\"",
+    "dev:root": "cd root-config && yarn dev",
+    "dev:app1": "cd mf-app1 && yarn dev",
+    "dev:app2": "cd mf-app2 && yarn dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "vite": "^7.1.3"
+  }
+}

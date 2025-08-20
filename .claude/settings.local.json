@@ -8,7 +8,10 @@
       "Bash(curl:*)",
       "WebFetch(domain:github.com)",
       "Bash(chmod:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(yarn create:*)",
+      "Bash(yarn)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": []
