@@ -5,6 +5,24 @@
   text-align: center;
 }
 
+.microfrontend-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.microfrontend-container > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.microfrontend-container #root {
+  max-width: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -10,9 +10,12 @@
     <nav style="padding: 20px; background: #f0f0f0; margin-bottom: 20px;">
       <a href="/app1" style="margin-right: 20px;">App 1</a>
       <a href="/app2" style="margin-right: 20px;">App 2</a>
+      <a href="/both" style="margin-right: 20px;">Both Apps</a>
     </nav>
-    <div id="single-spa-application:@mf/app1"></div>
-    <div id="single-spa-application:@mf/app2"></div>
+    <div class="microfrontend-container">
+      <div id="single-spa-application:@mf/app1"></div>
+      <div id="single-spa-application:@mf/app2"></div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
