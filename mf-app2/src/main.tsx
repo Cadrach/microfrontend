@@ -2,6 +2,10 @@ import React from 'react'
 import { createRoot, Root } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import { counterState } from './counterState'
+
+// Export counterState for cross-microfrontend imports
+export { counterState }
 
 let reactRoot: Root | null = null
 
